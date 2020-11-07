@@ -1,0 +1,12 @@
+{
+  "roles": [
+    {
+      "id": 1,
+      "name": "Nutricionista"
+    },
+    {
+      "id": 2,
+      "name": "Cliente"
+    }
+  ]
+}
