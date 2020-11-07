@@ -2,11 +2,18 @@
   "roles": [
     {
       "id": 1,
-      "name": "Nutricionista"
+      "name": "Nutricionista",
+      "published": true
     },
     {
       "id": 2,
-      "name": "Cliente"
+      "name": "Cliente",
+      "published": true
+    },
+    {
+      "id": 3,
+      "name": "Administrador",
+      "published": true
     }
   ]
 }
