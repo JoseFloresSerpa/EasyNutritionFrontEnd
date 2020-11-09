@@ -1,21 +1,13 @@
 <template>
   <v-card>
     <v-card-title>
-      <span class="headline">Edit Role</span>
+      <span class="headline">Add Role</span>
     </v-card-title>
     <v-card-text>
       <v-container>
         <v-row>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item.id" label="Role Id"></v-text-field>
-          </v-col>
-          <v-col cols="12" sm="6" md="4">
             <v-text-field v-model="item.name" label="Role Name"></v-text-field>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col cols="12" sm="6" md="4">
-            <v-checkbox v-model="item.published" label="Published"></v-checkbox>
           </v-col>
         </v-row>
       </v-container>
@@ -32,29 +24,19 @@
 import RoleService from "@/services/roles-service";
 
 export default {
-  name: "edit-role",
+  name: "add-role",
   data() {
     return {
       item: {
         id: 0,
-        name: '',
-        published: false
+        name: ''
       }
     }
   },
   methods: {
-    retrieveRole(id) {
-      RoleService.get(id)
-          .then((response) => {
-            this.item = response.data;
-          })
-          .catch(e => {
-            console.log((e));
-          })
-    },
 
     save() {
-      RoleService.update(this.item.id, this.item)
+      RoleService.create(this.item)
           .then(() => {
             this.navigateToRoles();
           })
@@ -68,9 +50,6 @@ export default {
     navigateToRoles() {
       this.$router.push({name: 'roles'});
     }
-  },
-  created() {
-    this.retrieveRole(this.$route.params.id);
   }
 }
 </script>

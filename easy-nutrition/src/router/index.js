@@ -22,18 +22,38 @@ const routes = [
     {
         path: '/roles',
         name: 'roles',
-        component: () => import('../components/roles')
+        component: () => import('../components/roles/roles')
     },
     {
         path: '/roles/new',
         name: 'add-role',
-        component: () => import('../components/add-role')
+        component: () => import('../components/roles/add-role')
     },
     {
         path: '/roles/:id',
         name: 'edit-role',
-        component: () => import('../components/edit-role')
+        component: () => import('../components/roles/edit-role')
+    },
+
+    {
+        path: '/users',
+        name: 'users',
+        component: () => import('../components/users/users')
+    },
+    {
+        path: '/users/new',
+        name: 'add-user',
+        component: () => import('../components/users/add-user')
+    },
+    {
+        path: '/users/:id',
+        name: 'edit-user',
+        component: () => import('../components/users/edit-user')
     }
+
+
+
+
 ]
 
 const router = new VueRouter({

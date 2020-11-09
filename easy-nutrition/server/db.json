@@ -2,18 +2,59 @@
   "roles": [
     {
       "id": 1,
-      "name": "Nutricionista",
-      "published": true
+      "name": "Nutricionista"
     },
     {
       "id": 2,
-      "name": "Cliente",
-      "published": true
+      "name": "Cliente"
     },
     {
       "id": 3,
-      "name": "Administrador",
-      "published": true
+      "name": "Administrador"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "AlfredoGomez",
+      "password": "Gomez",
+      "name": "Alfredo",
+      "lastname": "Ramirez",
+      "birthday": "10/10/1980",
+      "email": "alfredito@gmail.com",
+      "phone": "97531546",
+      "address": "Las Malvinas 123",
+      "active": true,
+      "linkedin": "https:afjaowjfiawj.com",
+      "role": 1
+    },
+    {
+      "id": 2,
+      "username": "CarlosRonceros",
+      "password": "1234",
+      "name": "Carlos",
+      "lastname": "Ronceros",
+      "birthday": "10/07/1998",
+      "email": "carlosperez@hotmail.com",
+      "phone": "97431546",
+      "address": "Jr De la union",
+      "active": true,
+      "linkedin": "https://...",
+      "role": 1
+    },
+    {
+      "id": "3",
+      "username": "MarianoCloss",
+      "password": "Gol",
+      "name": "Mariano",
+      "lastname": "Closs",
+      "birthday": "15/07/1992",
+      "email": "marianocloss@gmail.com",
+      "phone": "97632145",
+      "address": "Av. Argentina 1234",
+      "active": "true",
+      "linkedin": "",
+      "role": "2"
     }
   ]
 }

@@ -37,9 +37,6 @@
                     <v-col cols="12" sm="6" md="4">
                       <v-text-field v-model="editedItem.name" label="Role Name"></v-text-field>
                     </v-col>
-                    <v-col cols="12" sm="6" md="4">
-                      <v-checkbox v-model="editedItem.published" label="Published"></v-checkbox>
-                    </v-col>
                   </v-row>
                 </v-container>
               </v-card-text>
@@ -75,7 +72,7 @@
 </template>
 
 <script>
-import RoleService from '../services/roles-service';
+import RoleService from '../../services/roles-service';
 
 export default {
   name: "roles",
@@ -87,7 +84,6 @@ export default {
       headers: [
         {text: 'Id', value: 'id'},
         {text: 'Name', value: 'name'},
-        {text: 'Status', value: 'status'},
         {text: 'Actions', value: 'actions', sortable: false}
       ],
       roles: [],
@@ -95,13 +91,11 @@ export default {
       editedIndex: -1,
       editedItem: {
         id: 0,
-        name: '',
-        published: false
+        name: ''
       },
       defaultItem: {
         id: 0,
-        name: '',
-        published: false
+        name: ''
       },
     }
   },
@@ -134,8 +128,7 @@ export default {
     getDisplayRole(role) {
       return {
         id: role.id,
-        name: role.name,
-        status: role.published ? "Published" : "Pending",
+        name: role.name
       };
     },
 
