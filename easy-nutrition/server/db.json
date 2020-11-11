@@ -56,5 +56,36 @@
       "linkedin": "",
       "role": "2"
     }
+  ],
+  "subscriptions": [
+    {
+      "id": 1,
+      "maxSessions": 4,
+      "price": 10,
+      "active": true,
+      "userId": 1
+    },
+    {
+      "id": "3",
+      "maxSessions": "4",
+      "price": "12",
+      "active": "true",
+      "userId": "4"
+    },
+    {
+      "id": "kEWnQjw",
+      "subscriptionname": "",
+      "maxSessions": "sdasd",
+      "price": "awdawd",
+      "userId": "awdawd"
+    },
+    {
+      "id": "dasd",
+      "subscriptionname": "",
+      "maxSessions": "awdawd",
+      "price": "awdawd",
+      "active": "awdaw",
+      "userId": "dawdaw"
+    }
   ]
 }

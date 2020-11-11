@@ -49,6 +49,21 @@ const routes = [
         path: '/users/:id',
         name: 'edit-user',
         component: () => import('../components/users/edit-user')
+    },
+    {
+        path: '/subscriptions',
+        name: 'subscriptions',
+        component: () => import('../components/subscriptions/subscriptions')
+    },
+    {
+        path: '/subscriptions/new',
+        name: 'add-subscription',
+        component: () => import('../components/subscriptions/add-subscription')
+    },
+    {
+        path: '/subscriptions/:id',
+        name: 'edit-subscription',
+        component: () => import('../components/subscriptions/edit-subscription')
     }
 
 
