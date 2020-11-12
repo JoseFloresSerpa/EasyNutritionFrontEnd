@@ -1,0 +1,13 @@
+<template>
+
+</template>
+
+<script>
+export default {
+name: "experiences"
+}
+</script>
+
+<style scoped>
+
+</style>

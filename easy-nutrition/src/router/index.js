@@ -49,10 +49,17 @@ const routes = [
         path: '/users/:id',
         name: 'edit-user',
         component: () => import('../components/users/edit-user')
+    },
+    {
+        path: '/complaints',
+        name: 'complaints',
+        component: () => import('../components/complaints/complaints')
+    },
+    {
+        path: '/complaints/:id',
+        name: 'edit-complaint',
+        component: () => import('../components/complaints/edit-complaint')
     }
-
-
-
 
 ]
 
