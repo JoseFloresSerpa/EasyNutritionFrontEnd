@@ -10,7 +10,7 @@
         <v-btn text to="/roles">Roles</v-btn>
         <v-btn text to="/users">Users</v-btn>
         <v-btn text to="/subscriptions">Subscriptions</v-btn>
-
+        <v-btn text to="/diets">Diets</v-btn>
         <v-btn text to="/about">About</v-btn>
       </v-toolbar-items>
     </v-app-bar>
