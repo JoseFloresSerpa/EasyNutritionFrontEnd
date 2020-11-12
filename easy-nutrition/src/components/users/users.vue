@@ -178,7 +178,7 @@ export default {
         address: user.address,
         active: user.active,
         linkedin: user.linkedin,
-        role: user.role
+        role: user.role.name
       };
     },
 
