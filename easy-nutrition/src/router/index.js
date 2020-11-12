@@ -67,8 +67,23 @@ const routes = [
         path: '/subscriptions/:id',
         name: 'edit-subscription',
         component: () => import('../components/subscriptions/edit-subscription')
-    }
+    },
 
+    {
+        path: '/diets',
+        name: 'diets',
+        component: () => import('../components/diets/diets')
+    },
+    {
+        path: '/diets/new',
+        name: 'add-diet',
+        component: () => import('../components/diets/add-diet')
+    },
+    {
+        path: '/diets/:id',
+        name: 'edit-diet',
+        component: () => import('../components/diets/edit-diet')
+    }
 
 
 
