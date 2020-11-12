@@ -87,5 +87,20 @@
       "active": "awdaw",
       "userId": "dawdaw"
     }
-  ]
+  ],
+
+  "diets": [
+    {
+      "id": 1,
+      "title": "Dieta Vegetariana",
+      "description": "Example of a diet",
+      "user": 1
+    },
+    {
+      "id": 2,
+      "title": "Dieta para masa muscular",
+      "description": "Example of a diet",
+      "user": 2
+    }
+    ]
 }
