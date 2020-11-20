@@ -6,10 +6,11 @@
       <v-spacer></v-spacer>
       <v-toolbar-items>
         <v-btn text to="/">Home</v-btn>
+        <v-btn text to="/calendar">Calendar</v-btn>
         <v-btn text to="/roles">Roles</v-btn>
         <v-btn text to="/users">Users</v-btn>
-        <v-btn text to="/complaints">Complaints</v-btn>
-        <v-btn text to="/experiences">Experiences</v-btn>
+        <v-btn text to="/subscriptions">Subscriptions</v-btn>
+        <v-btn text to="/diets">Diets</v-btn>
         <v-btn text to="/about">About</v-btn>
       </v-toolbar-items>
     </v-app-bar>

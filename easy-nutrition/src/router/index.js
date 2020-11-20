@@ -13,12 +13,15 @@ const routes = [
     {
         path: '/about',
         name: 'About',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "about" */ '../views/about.vue')
-    }
-    ,
+    },
+    {
+        path: '/calendar',
+        name: 'Calendar',
+        component: () => import(/* webpackChunkName: "calendar" */ '../views/calendar.vue')
+    },
+
+
     {
         path: '/roles',
         name: 'roles',
@@ -51,35 +54,37 @@ const routes = [
         component: () => import('../components/users/edit-user')
     },
     {
-        path: '/complaints',
-        name: 'complaints',
-        component: () => import('../components/complaints/complaints')
+        path: '/subscriptions',
+        name: 'subscriptions',
+        component: () => import('../components/subscriptions/subscriptions')
     },
     {
-        path: '/complaints/new',
-        name: 'add-complaint',
-        component: () => import('../components/complaints/add-complaint')
+        path: '/subscriptions/new',
+        name: 'add-subscription',
+        component: () => import('../components/subscriptions/add-subscription')
     },
     {
-        path: '/complaints/:id',
-        name: 'edit-complaint',
-        component: () => import('../components/complaints/edit-complaint')
+        path: '/subscriptions/:id',
+        name: 'edit-subscription',
+        component: () => import('../components/subscriptions/edit-subscription')
+    },
+
+    {
+        path: '/diets',
+        name: 'diets',
+        component: () => import('../components/diets/diets')
     },
     {
-        path: '/experiences',
-        name: 'experiences',
-        component: () => import('../components/experiences/experiences')
+        path: '/diets/new',
+        name: 'add-diet',
+        component: () => import('../components/diets/add-diet')
     },
     {
-        path: '/experiences/new',
-        name: 'add-experience',
-        component: () => import('../components/experiences/add-experience')
-    },
-    {
-        path: '/experiences/:id',
-        name: 'edit-experience',
-        component: () => import('../components/experiences/edit-experience')
+        path: '/diets/:id',
+        name: 'edit-diet',
+        component: () => import('../components/diets/edit-diet')
     }
+
 
 
 ]
