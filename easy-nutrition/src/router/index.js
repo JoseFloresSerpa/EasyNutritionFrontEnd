@@ -83,9 +83,39 @@ const routes = [
         path: '/diets/:id',
         name: 'edit-diet',
         component: () => import('../components/diets/edit-diet')
+    },
+
+    {
+        path: '/complaints',
+        name: 'complaints',
+        component: () => import('../components/complaints/complaints')
+    },
+    {
+        path: '/complaints/new',
+        name: 'add-complaint',
+        component: () => import('../components/complaints/add-complaint')
+    },
+    {
+        path: '/complaints/:id',
+        name: 'edit-complaint',
+        component: () => import('../components/complaints/edit-complaint')
+    },
+
+    {
+        path: '/experiences',
+        name: 'experience',
+        component: () => import('../components/experiences/experiences')
+    },
+    {
+        path: '/experiences/new',
+        name: 'add-experience',
+        component: () => import('../components/experiences/add-experience')
+    },
+    {
+        path: '/experiences/:id',
+        name: 'edit-experience',
+        component: () => import('../components/experiences/edit-experience')
     }
-
-
 
 ]
 

@@ -65,7 +65,7 @@
                       <v-text-field v-model="editedItem.linkedin" label="Linkedin"></v-text-field>
                     </v-col>
                     <v-col cols="12" sm="6" md="4">
-                      <v-text-field v-model="editedItem.role" label="Role"></v-text-field>
+                      <v-text-field v-model="editedItem.role.id" label="Role"></v-text-field>
                     </v-col>
                   </v-row>
                 </v-container>
@@ -102,10 +102,10 @@
 </template>
 
 <script>
-import UserService from '../../services/users-service';
 
+import UserService from '../../services/users-service';
 export default {
-  username: "users",
+  name: "users",
   data() {
     return {
       search: '',
@@ -131,14 +131,18 @@ export default {
       editedIndex: -1,
       editedItem: {
         id: 0,
-        username: ''
+        username: '',
+        role: ''
       },
       defaultItem: {
         id: 0,
-        username: ''
+        username: '',
+        role: ''
       },
     }
   },
+
+
   computed: {
     formTitle() {
       return this.editedIndex === -1 ? 'New User' : 'Edit User'
@@ -165,6 +169,7 @@ export default {
           });
     },
 
+
     getDisplayUser(user) {
       return {
         id: user.id,
@@ -181,6 +186,7 @@ export default {
         role: user.role.name
       };
     },
+
 
     refreshList() {
       this.retrieveUsers();

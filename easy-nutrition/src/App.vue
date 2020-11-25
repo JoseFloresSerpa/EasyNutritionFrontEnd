@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <v-app-bar app dark fixed>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
       <v-toolbar-title>Easy Nutrition</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
@@ -10,6 +9,8 @@
         <v-btn text to="/roles">Roles</v-btn>
         <v-btn text to="/users">Users</v-btn>
         <v-btn text to="/subscriptions">Subscriptions</v-btn>
+        <v-btn text to="/experiences">Experiences</v-btn>
+        <v-btn text to="/complaints">Complaints</v-btn>
         <v-btn text to="/diets">Diets</v-btn>
         <v-btn text to="/about">About</v-btn>
       </v-toolbar-items>

@@ -77,7 +77,7 @@
 
 <script>
 
-import ComplaintService from '../../services/roles-service'
+import ComplaintService from '../../services/complaints-service'
 
 export default {
 
