@@ -4,7 +4,6 @@
       <v-toolbar-title>Easy Nutrition</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn text to="/calendar">Citas</v-btn>
         <v-btn text to="/roles">Roles</v-btn>
         <v-btn text to="/users">Users</v-btn>
         <v-btn text to="/subscriptions">Subscriptions</v-btn>

@@ -16,7 +16,6 @@
                     class="elevation-1" ref="experiencesTable">
         <template v-slot:[`item.actions`]="{ item }">
           <v-icon small class="mr-2" @click="editItem(item)">mdi-pencil</v-icon>
-          <v-icon small class="mr-2" @click="navigateToEditExperience(item.id)">mdi-pen</v-icon>
           <v-icon small @click="deleteItem(item)">mdi-delete</v-icon>
         </template>
         <template v-slot:top>
@@ -68,10 +67,6 @@
         </template>
       </v-data-table>
     </v-card-text>
-    <v-card-actions>
-      <v-btn small color="primary" @click="navigateToAddExperience">Add Experience</v-btn>
-      <v-btn small color="error" @click="removeAllExperiences">Remove All</v-btn>
-    </v-card-actions>
   </v-card>
 </template>
 

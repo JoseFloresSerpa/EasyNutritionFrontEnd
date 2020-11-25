@@ -16,7 +16,6 @@
                     class="elevation-1" ref="usersTable">
         <template v-slot:[`item.actions`]="{ item }">
           <v-icon small class="mr-2" @click="editItem(item)">mdi-pencil</v-icon>
-          <v-icon small class="mr-2" @click="navigateToEditUser(item.id)">mdi-pen</v-icon>
           <v-icon small @click="deleteItem(item)">mdi-delete</v-icon>
         </template>
         <template v-slot:top>
@@ -94,10 +93,6 @@
         </template>
       </v-data-table>
     </v-card-text>
-    <v-card-actions>
-      <v-btn small color="primary" @click="navigateToAddUser">Add User</v-btn>
-      <v-btn small color="error" @click="removeAllUsers">Remove All</v-btn>
-    </v-card-actions>
   </v-card>
 </template>
 
