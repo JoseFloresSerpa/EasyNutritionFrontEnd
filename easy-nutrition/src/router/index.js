@@ -11,14 +11,40 @@ const routes = [
         component: Home
     },
     {
-        path: '/about',
-        name: 'About',
-        component: () => import(/* webpackChunkName: "about" */ '../views/about.vue')
+        path: '/login',
+        name: 'Login',
+        component: () => import(/* webpackChunkName: "login" */ '../views/login.vue')
+    },
+    {
+        path: '/main',
+        name: 'Main',
+        component: () => import(/* webpackChunkName: "main" */ '../views/main.vue')
+    },
+    {
+        path: '/register',
+        name: 'Register',
+        component: () => import(/* webpackChunkName: "register" */ '../views/register.vue')
     },
     {
         path: '/calendar',
         name: 'Calendar',
         component: () => import(/* webpackChunkName: "calendar" */ '../views/calendar.vue')
+    },
+
+    {
+        path: '/administrator',
+        name: 'Administrator',
+        component: () => import(/* webpackChunkName: "administrator" */ '../views/administrator.vue')
+    },
+    {
+        path: '/client',
+        name: 'Client',
+        component: () => import(/* webpackChunkName: "client" */ '../views/client.vue')
+    },
+    {
+        path: '/nutritionist',
+        name: 'Nutritionist',
+        component: () => import(/* webpackChunkName: "nutritionist" */ '../views/nutritionist.vue')
     },
 
 

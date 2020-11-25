@@ -4,8 +4,14 @@
       <v-toolbar-title>Easy Nutrition</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn text to="/login">Sign In</v-btn>
-        <v-btn text to="/register">Sign Up</v-btn>
+        <v-btn text to="/calendar">Citas</v-btn>
+        <v-btn text to="/roles">Roles</v-btn>
+        <v-btn text to="/users">Users</v-btn>
+        <v-btn text to="/subscriptions">Subscriptions</v-btn>
+        <v-btn text to="/experiences">Experiences</v-btn>
+        <v-btn text to="/complaints">Complaints</v-btn>
+        <v-btn text to="/diets">Diets</v-btn>
+        <v-btn text to="/login">Log Out</v-btn>
       </v-toolbar-items>
     </v-app-bar>
     <v-main>
@@ -19,9 +25,8 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Home',
+name: "client",
 
   components: {
 
