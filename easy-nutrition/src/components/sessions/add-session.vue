@@ -34,7 +34,7 @@
 
 <script>
 
-import SessionService from "@/services/sessions-service-service";
+import SessionService from "@/services/sessions-service";
 
 export default {
   name: "add-session",
@@ -43,7 +43,7 @@ export default {
       item: {
         id: 0,
         name: '',
-        description : ''
+        user: '',
       }
     }
   },
@@ -72,6 +72,4 @@ export default {
 <style scoped>
 
 </style>
-
-
 

@@ -171,8 +171,23 @@ const routes = [
         path: '/progresses/:id',
         name: 'edit-progress',
         component: () => import('../components/progresses/edit-progress')
-    }
+    },
 
+    {
+        path: '/sessions',
+        name: 'session',
+        component: () => import('../components/sessions/sessions')
+    },
+    {
+        path: '/sessions/new',
+        name: 'add-session',
+        component: () => import('../components/sessions/add-session')
+    },
+    {
+        path: '/sessions/:id',
+        name: 'edit-session',
+        component: () => import('../components/sessions/edit-session')
+    }
 ]
 
 const router = new VueRouter({

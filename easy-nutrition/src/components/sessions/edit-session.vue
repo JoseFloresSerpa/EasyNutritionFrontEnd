@@ -1,22 +1,22 @@
 <template>
   <v-card>
     <v-card-title>
-      <span class="headline">Add Session</span>
+      <span class="headline">Edit Session</span>
     </v-card-title>
     <v-card-text>
       <v-container>
         <v-row>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item.id" label="Id"></v-text-field>
+            <v-text-field v-model="item.id" label="Session Id"></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item.startat" label="Starat"></v-text-field>
+            <v-text-field v-model="item.startat" label="Session Startat"></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item.endat" label="Endat"></v-text-field>
+            <v-text-field v-model="item.endat" label="Session End"></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item.linkedin" label="Linkedin "></v-text-field>
+            <v-text-field v-model="item.linkedin" label="Session Linkedin "></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
             <v-text-field v-model="item.user" label="UserId"></v-text-field>
@@ -33,24 +33,32 @@
 </template>
 
 <script>
-
-import SessionService from "@/services/sessions-service-service";
+import SessionService from "@/services/sessions-service";
 
 export default {
-  name: "add-session",
+  name: "edit-Service",
   data() {
     return {
       item: {
         id: 0,
         name: '',
-        description : ''
+        user: ''
       }
     }
   },
   methods: {
+    retrieveSession(id) {
+      SessionService.get(id)
+          .then((response) => {
+            this.item = response.data;
+          })
+          .catch(e => {
+            console.log((e));
+          })
+    },
 
     save() {
-      SessionService.create(this.item)
+      SessionService.update(this.item.id, this.item)
           .then(() => {
             this.navigateToSessions();
           })
@@ -61,17 +69,18 @@ export default {
     close() {
       this.navigateToSessions();
     },
-    navigateToSessions() {
-      this.$router.push({name: 'sessions'});
+    navigateToServices() {
+      this.$router.push({name: 'services'});
     }
-  }
-
+  },
+  created() {
+    this.retrieveSessions(this.$route.params.id);
+  },
 }
+
 </script>
 
 <style scoped>
 
 </style>
-
-
 
