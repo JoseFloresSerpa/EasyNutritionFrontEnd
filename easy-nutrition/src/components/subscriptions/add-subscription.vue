@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-card-title>
-      <span class="headline">Add Subscription</span>
+      <span class="headline">Add Session</span>
     </v-card-title>
     <v-card-text>
       <v-container>
@@ -10,16 +10,16 @@
             <v-text-field v-model="item.id" label="Id"></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item.active" label="Active"></v-text-field>
+            <v-text-field v-model="item.startat" label="Starat"></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item.maxSessions" label="MaxSessions"></v-text-field>
+            <v-text-field v-model="item.endat" label="Endat"></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item.price" label="Price"></v-text-field>
+            <v-text-field v-model="item.linkedin" label="Linkedin "></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item.userId" label="UserId"></v-text-field>
+            <v-text-field v-model="item.user" label="UserId"></v-text-field>
           </v-col>
         </v-row>
       </v-container>
@@ -33,38 +33,45 @@
 </template>
 
 <script>
-import SubscriptionService from "@/subscriptions/schedules-subscription";
+
+import SessionService from "@/services/sessions-service-service";
 
 export default {
-  name: "add-schedule",
+  name: "add-session",
   data() {
     return {
       item: {
         id: 0,
+        name: '',
+        description : ''
       }
     }
   },
   methods: {
 
     save() {
-      SubscriptionService.create(this.item)
+      SessionService.create(this.item)
           .then(() => {
-            this.navigateToSubscriptions();
+            this.navigateToSessions();
           })
           .catch(e => {
             console.log(e);
           })
     },
     close() {
-      this.navigateToSubscriptions();
+      this.navigateToSessions();
     },
-    navigateToSubscriptions() {
-      this.$router.push({name: 'schedules'});
+    navigateToSessions() {
+      this.$router.push({name: 'sessions'});
     }
   }
+
 }
 </script>
 
 <style scoped>
 
 </style>
+
+
+
