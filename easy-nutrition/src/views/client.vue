@@ -6,6 +6,7 @@
       <v-toolbar-items>
         <v-btn text to="/calendar">Appointments</v-btn>
         <v-btn text to="/subscriptions">Subscription</v-btn>
+        <v-btn text to="/progresses">Progress</v-btn>
         <v-btn text  to="/schedules">Schedule</v-btn>
         <v-btn text to="/experiences">Experiences</v-btn>
         <v-btn text to="/complaints">Complaints</v-btn>
