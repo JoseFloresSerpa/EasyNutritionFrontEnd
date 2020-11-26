@@ -94,7 +94,21 @@ const routes = [
         name: 'edit-subscription',
         component: () => import('../components/subscriptions/edit-subscription')
     },
-
+    {
+        path: '/schedules',
+        name: 'schedules',
+        component: () => import('../components/schedules/schedules')
+    },
+    {
+        path: '/schedules/new',
+        name: 'add-schedule',
+        component: () => import('../components/schedules/add-schedule')
+    },
+    {
+        path: '/schedules/:id',
+        name: 'edit-schedule',
+        component: () => import('../components/schedules/edit-schedule')
+    },
     {
         path: '/diets',
         name: 'diets',
