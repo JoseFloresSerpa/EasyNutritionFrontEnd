@@ -13,10 +13,7 @@
             <v-text-field v-model="item.state" label="State"></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item." label="Endat"></v-text-field>
-          </v-col>
-          <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item.linkedin" label="Linkedin "></v-text-field>
+            <v-text-field v-model="item.session" label="SessionId"></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
             <v-text-field v-model="item.user" label="UserId"></v-text-field>
@@ -34,15 +31,15 @@
 
 <script>
 
-import SessionService from "@/services/sessions-service";
+import SessiondetailService from "@/services/sessions-service";
 
 export default {
-  name: "add-session",
+  name: "add-sessiondetail",
   data() {
     return {
       item: {
         id: 0,
-        name: '',
+        session: '',
         user: '',
       }
     }
@@ -50,18 +47,18 @@ export default {
   methods: {
 
     save() {
-      SessionService.create(this.item)
+      SessiondetailService.create(this.item)
           .then(() => {
-            this.navigateToSessions();
+            this.navigateToSessiondetails();
           })
           .catch(e => {
             console.log(e);
           })
     },
     close() {
-      this.navigateToSessions();
+      this.navigateToSessiondetails();
     },
-    navigateToSessions() {
+    navigateToSessiondetails() {
       this.$router.push({name: 'sessions'});
     }
   }

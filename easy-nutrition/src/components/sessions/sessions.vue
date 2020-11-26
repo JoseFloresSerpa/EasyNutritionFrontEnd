@@ -151,7 +151,7 @@ export default {
       this.retrieveSessions();
     },
 
-    removeAllUsers() {
+    removeAllSessions() {
       SessionService.deleteAll()
           .then(() => {
             this.refreshList();
@@ -165,12 +165,12 @@ export default {
     editItem(item) {
       this.editedIndex = this.displaySessions.indexOf(item);
       console.log(item);
-      this.editedItem = this.users[this.editedIndex];
+      this.editedItem = this.sessions[this.editedIndex];
       this.dialog = true;
     },
 
     deleteItem(item) {
-      this.editedIndex = this.displayUsers.indexOf(item);
+      this.editedIndex = this.displaySessions.indexOf(item);
       this.editedItem = Object.assign({}, this.sessions[this.editedIndex]);
       this.dialogDelete = true;
     },
