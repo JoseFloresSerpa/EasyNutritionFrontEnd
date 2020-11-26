@@ -10,10 +10,10 @@
             <v-text-field v-model="item.id" label="Id"></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item.startat" label="Starat"></v-text-field>
+            <v-text-field v-model="item.startat" label="Start"></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-text-field v-model="item.endat" label="Endat"></v-text-field>
+            <v-text-field v-model="item.endat" label="EndAt"></v-text-field>
           </v-col>
           <v-col cols="12" sm="6" md="4">
             <v-text-field v-model="item.linkedin" label="Linkedin "></v-text-field>

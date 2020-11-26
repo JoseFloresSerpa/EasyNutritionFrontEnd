@@ -1,32 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea19ecc4-c051-44d4-b8e5-4a1e151ef130" name="Default Changelist" comment="" />
+    <list default="true" id="386baabc-7f8e-4549-8d8e-f1edaf5ab3d4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-nutrition/src/components/sessiondetails/sessiondetails.vue" beforeDir="false" afterPath="$PROJECT_DIR$/easy-nutrition/src/components/sessiondetails/sessiondetails.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-nutrition/src/components/sessions/add-session.vue" beforeDir="false" afterPath="$PROJECT_DIR$/easy-nutrition/src/components/sessions/add-session.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-nutrition/src/components/subscriptions/add-subscription.vue" beforeDir="false" afterPath="$PROJECT_DIR$/easy-nutrition/src/components/subscriptions/add-subscription.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Vue Single File Component" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="app-06-session-management" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1kosC8rWyVEfSv5IDrPXP3AIlD5" />
+  <component name="ProjectId" id="1kphFWitCB3uIM0FlDlp7jFeRJc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/easy-nutrition/package.json" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -34,6 +60,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/easy-nutrition/package-lock.json" />
+      <command value="star" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="serve" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/easy-nutrition/package.json" />
       <command value="run" />
@@ -48,46 +81,112 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ea19ecc4-c051-44d4-b8e5-4a1e151ef130" name="Default Changelist" comment="" />
-      <created>1606378149808</created>
+      <changelist id="386baabc-7f8e-4549-8d8e-f1edaf5ab3d4" name="Default Changelist" comment="" />
+      <created>1606403352003</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606378149808</updated>
-      <workItem from="1606378151588" duration="8126000" />
+      <updated>1606403352003</updated>
+      <workItem from="1606403353751" duration="2579000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606380995001">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606403863709">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1606380995001" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1606394165357">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606403863709" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606403836091">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606394165357" />
-    <state width="1345" height="172" key="GridCell.Tab.0.bottom" timestamp="1606383140764">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606403836091" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1606405744023">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606383140764" />
-    <state width="1345" height="172" key="GridCell.Tab.0.center" timestamp="1606383140760">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606405744023" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1606405744023">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606383140760" />
-    <state width="1345" height="172" key="GridCell.Tab.0.left" timestamp="1606383140757">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606405744023" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1606405744022">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606383140757" />
-    <state width="1345" height="172" key="GridCell.Tab.0.right" timestamp="1606383140760">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606405744022" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1606405744023">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606383140760" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1606378547783">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606405744023" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1606404939079">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1606378547783" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606404939079" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1606404939078">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606404939078" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1606404939078">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606404939078" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1606404939078">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606404939078" />
+    <state width="1899" height="348" key="GridCell.Tab.2.bottom" timestamp="1606404939079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606404939079" />
+    <state width="1899" height="348" key="GridCell.Tab.2.center" timestamp="1606404939079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.center/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606404939079" />
+    <state width="1899" height="348" key="GridCell.Tab.2.left" timestamp="1606404939079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.left/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606404939079" />
+    <state width="1899" height="348" key="GridCell.Tab.2.right" timestamp="1606404939079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.right/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606404939079" />
+    <state width="1899" height="348" key="GridCell.Tab.3.bottom" timestamp="1606404939079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606404939079" />
+    <state width="1899" height="348" key="GridCell.Tab.3.center" timestamp="1606404939079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.center/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606404939079" />
+    <state width="1899" height="348" key="GridCell.Tab.3.left" timestamp="1606404939079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.left/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606404939079" />
+    <state width="1899" height="348" key="GridCell.Tab.3.right" timestamp="1606404939079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.right/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606404939079" />
+    <state x="1920" y="148" width="1382" height="717" key="dock-window-1" timestamp="1606405580181">
+      <screen x="1920" y="148" width="1366" height="728" />
+    </state>
+    <state x="1920" y="148" width="1382" height="717" key="dock-window-1/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606405580181" />
+    <state x="709" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1606403899450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="709" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.148.1366.728@0.0.1920.1040" timestamp="1606403899450" />
   </component>
 </project>
