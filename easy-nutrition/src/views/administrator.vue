@@ -11,7 +11,6 @@
         <v-btn text to="/schedules">Schedules</v-btn>
         <v-btn text to="/experiences">Experiences</v-btn>
         <v-btn text to="/sessions">Sessions</v-btn>
-        <v-btn text to="/sessiondetails">Sessiondetails</v-btn>
         <v-btn text to="/complaints">Complaints</v-btn>
         <v-btn text to="/diets">Diets</v-btn>
         <v-btn text to="/login">Log Out</v-btn>

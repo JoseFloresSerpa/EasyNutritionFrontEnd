@@ -187,22 +187,6 @@ const routes = [
         path: '/sessions/:id',
         name: 'edit-session',
         component: () => import('../components/sessions/edit-session')
-    },
-
-    {
-        path: '/sessiondetails',
-        name: 'sessiondetail',
-        component: () => import('../components/sessiondetails/sessiondetails')
-    },
-    {
-        path: '/sessiondetails/new',
-        name: 'add-sessiondetail',
-        component: () => import('../components/sessiondetails/add-sessiondetail')
-    },
-    {
-        path: '/sessiondetails/:id',
-        name: 'edit-sessiondetail',
-        component: () => import('../components/sessiondetails/edit-sessiondetail')
     }
 ]
 
