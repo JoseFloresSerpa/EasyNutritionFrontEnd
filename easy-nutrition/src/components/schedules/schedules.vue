@@ -43,7 +43,7 @@
                       <v-text-field v-model="editedItem.state" label="State"></v-text-field>
                     </v-col>
                     <v-col cols="12" sm="6" md="4">
-                      <v-text-field v-model="editedItem.userId" label="UserId"></v-text-field>
+                      <v-text-field v-model="editedItem.user" label="User"></v-text-field>
                     </v-col>
                   </v-row>
                 </v-container>
@@ -87,7 +87,7 @@ export default {
         {text: 'StartAt', value: 'startAt'},
         {text: 'EndAt', value: 'endAt'},
         {text: 'State', value: "state" },
-        {text: 'UserId', value: 'userId'},
+        {text: 'User', value: 'user'},
         {text: 'Actions', value: 'actions', sortable: false}
       ],
       schedules: [],
@@ -95,11 +95,11 @@ export default {
       editedIndex: -1,
       editedItem: {
         id: 0,
-        schedulename: ''
+        name: ''
       },
       defaultItem: {
         id: 0,
-        schedulename: ''
+        name: ''
       },
     }
   },
@@ -135,7 +135,7 @@ export default {
         startAt: schedule.startAt,
         endAt: schedule.endAt,
         state: schedule.state,
-        userId: schedule.userId
+        user: schedule.user.username
       };
     },
 
