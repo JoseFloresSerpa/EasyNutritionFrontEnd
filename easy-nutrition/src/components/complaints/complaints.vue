@@ -34,12 +34,11 @@
                       <v-text-field v-model="editedItem.id" label="Id"></v-text-field>
                     </v-col>
                     <v-col cols="12" sm="6" md="4">
-                      <v-text-field v-model="editedItem.name" label="Complaint Name"></v-text-field>
-                    </v-col>
-                    <v-col cols="12" sm="6" md="4">
                       <v-text-field v-model="editedItem.description" label="Complaint Description"></v-text-field>
                     </v-col>
-
+                    <v-col cols="12" sm="6" md="4">
+                      <v-text-field v-model="editedItem.user" label="User"></v-text-field>
+                    </v-col>
                   </v-row>
                 </v-container>
               </v-card-text>
@@ -84,20 +83,18 @@ export default {
       dialogDelete: false,
       headers: [
         {text: 'Id', value: 'id'},
-        {text: 'Name', value: 'name'},
         {text: 'Description', value: 'description'},
+        {text: 'User', value: 'user'},
         {text: 'Actions', value: 'actions', sortable: false}
       ],
       complaints: [],
       displayComplaints: [],
       editedIndex: -1,
       editedItem: {
-        id: 0,
-        name: ''
+        id: 0
       },
       defaultItem: {
-        id: 0,
-        name: ''
+        id: 0
       },
     }
   },
@@ -132,8 +129,8 @@ export default {
     getDisplayComplaint(complaint) {
       return {
         id: complaint.id,
-        name: complaint.name,
-        description: complaint.description
+        description: complaint.description,
+        user: complaint.user.username
       };
     },
 

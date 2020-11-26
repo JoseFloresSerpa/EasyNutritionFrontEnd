@@ -43,7 +43,7 @@
                       <v-text-field v-model="editedItem.active" label="Active"></v-text-field>
                     </v-col>
                     <v-col cols="12" sm="6" md="4">
-                      <v-text-field v-model="editedItem.userId" label="UserId"></v-text-field>
+                      <v-text-field v-model="editedItem.user" label="User"></v-text-field>
                     </v-col>
                   </v-row>
                 </v-container>
@@ -87,7 +87,7 @@ export default {
         {text: 'MaxSessions', value: 'maxSessions'},
         {text: 'Price', value: 'price'},
         {text: 'Active', value: "active" },
-        {text: 'UserId', value: 'userId'},
+        {text: 'User', value: 'user'},
         {text: 'Actions', value: 'actions', sortable: false}
       ],
       subscriptions: [],
@@ -95,11 +95,11 @@ export default {
       editedIndex: -1,
       editedItem: {
         id: 0,
-        subscriptionname: ''
+        name: ''
       },
       defaultItem: {
         id: 0,
-        subscriptionname: ''
+        name: ''
       },
     }
   },
@@ -135,7 +135,7 @@ export default {
         maxSessions: subscription.maxSessions,
         price: subscription.price,
         active: subscription.active,
-        userId: subscription.userId
+        user: subscription.user.username
       };
     },
 

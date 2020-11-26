@@ -39,6 +39,9 @@
                     <v-col cols="12" sm="6" md="4">
                       <v-text-field v-model="editedItem.description" label="Description"></v-text-field>
                     </v-col>
+                    <v-col cols="12" sm="6" md="4">
+                      <v-text-field v-model="editedItem.user" label="User"></v-text-field>
+                    </v-col>
 
                   </v-row>
                 </v-container>
@@ -82,8 +85,9 @@ export default {
       dialogDelete: false,
       headers: [
         {text: 'Id', value: 'id'},
-        {text: 'Name', value: 'rame'},
+        {text: 'Name', value: 'name'},
         {text: 'Description', value: 'description'},
+        {text: 'User', value: 'user'},
         {text: 'Actions', value: 'actions', sortable: false}
       ],
       experiences: [],
@@ -91,11 +95,15 @@ export default {
       editedIndex: -1,
       editedItem: {
         id: 0,
-        name: ''
+        name: '',
+        description: '',
+        user: ''
       },
       defaultItem: {
         id: 0,
-        name: ''
+        name: '',
+        description: '',
+        user: ''
       },
     }
   },
@@ -129,7 +137,8 @@ export default {
       return {
         id: experience.id,
         name: experience.name,
-        description: experience.description
+        description: experience.description,
+        user: experience.user.username
       };
     },
 

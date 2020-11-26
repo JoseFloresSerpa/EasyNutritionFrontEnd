@@ -40,7 +40,7 @@
                       <v-text-field v-model="editedItem.description" label="Description"></v-text-field>
                     </v-col>
                     <v-col cols="12" sm="6" md="4">
-                      <v-text-field v-model="editedItem.user" label="User"></v-text-field>
+                      <v-text-field v-model="editedItem.session" label="Session"></v-text-field>
                     </v-col>
                   </v-row>
                 </v-container>
@@ -86,7 +86,7 @@ export default {
         {text: 'Id', value: 'id'},
         {text: 'Title', value: 'title'},
         {text: 'Description', value: 'description'},
-        {text: 'User', value: "user" },
+        {text: 'Session', value: "session" },
         {text: 'Actions', value: 'actions', sortable: false}
       ],
       diets: [],
@@ -94,7 +94,8 @@ export default {
       editedIndex: -1,
       editedItem: {
         id: 0,
-        title: ''
+        title: '',
+
       },
       defaultItem: {
         id: 0,
@@ -133,7 +134,7 @@ export default {
         id: diet.id,
         title: diet.title,
         description: diet.description,
-        user: diet.user
+        session: diet.session.id
       };
     },
 
