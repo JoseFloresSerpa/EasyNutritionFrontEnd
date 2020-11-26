@@ -155,6 +155,22 @@ const routes = [
         path: '/experiences/:id',
         name: 'edit-experience',
         component: () => import('../components/experiences/edit-experience')
+    },
+
+    {
+        path: '/progresses',
+        name: 'progresses',
+        component: () => import('../components/progresses/progresses')
+    },
+    {
+        path: '/progresses/new',
+        name: 'add-progress',
+        component: () => import('../components/progresses/add-progress')
+    },
+    {
+        path: '/progresses/:id',
+        name: 'edit-progress',
+        component: () => import('../components/progresses/edit-progress')
     }
 
 ]
